@@ -1,0 +1,167 @@
+:root {
+  /*berfngsi membuat var di css*/
+  --primary: tomato;
+  --bg: pink;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: black;
+}
+
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%; /* 1 rem = 16px*/
+  background-color: rgba(255, 255, 0, 0.7);
+  border-bottom: 1px solid var(--primary);
+  position: fixed; /*agar navbar tidak berpindah posisi*/
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /*agar tidak tertimpa yang lain*/
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+} 
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 1.4rem;
+}
+
+.navbar .navbar-nav a:hover {
+  font-weight: bold;
+  color: var(--primary);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--primary);
+  transform: scaleX(0); /*nilai 0 agar tidak tampil terlebih dahulu*/
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.7s linear;
+}
+
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+  transition: 0.9s;
+}
+
+#ham-menu {
+  display: none;
+}
+
+/*Media Queries*/
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 65%;
+      }
+      #ham-menu {
+        display: inline-block;
+      }
+
+      .navbar .navbar-nav { /*side-bar*/
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+      }
+
+      .navbar .navbar-nav a{
+        display: block;
+        font-size: 1.6rem;
+        margin-left: 1.4rem;
+        padding: 2rem;
+      }
+
+      .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+      }
+
+      .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+      }
+      
+      .navbar .navbar-nav.active{
+        right: 0;
+      }
+}
+
+/*Smartphone*/
+@media (max-width: 767px) {
+    html {
+        font-size: 55%;
+      }
+      #ham-menu {
+        display: inline-block;
+      }
+
+      .navbar .navbar-nav { /*side-bar*/
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+      }
+
+      .navbar .navbar-nav a{
+        display: block;
+        font-size: 1.4rem;
+        margin-left: 1.4rem;
+        padding: 2rem;
+      }
+
+      .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+      }
+
+      .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+      }
+      
+      .navbar .navbar-nav.active{
+        right: 0;
+      }
+}

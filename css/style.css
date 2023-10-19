@@ -131,7 +131,8 @@ body {
 .hero .content p{
   font-size: 1.6rem;
   margin: 0;
-  line-height: 1.56  font-weight: 100;
+  line-height: 1.56;
+  font-weight: 100;
   text-shadow: 1px 1px 3px rgba(255, 99, 71, 0.5);
   mix-blend-mode: difference;
 }

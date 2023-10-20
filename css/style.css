@@ -1,7 +1,8 @@
 :root {
   /*berfngsi membuat var di css*/
-  --primary: tomato;
-  --bg: pink;
+  --primary: rgba(255, 69, 0, 1);
+  --bg: rgba(255, 215, 0, 1);
+  --sub: rgba(51, 51, 51, 1);
 }
 
 * {
@@ -27,8 +28,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0rem 7%; /* 1 rem = 16px*/
-  background-color: rgba(255, 255, 0, 0.7);
-  border-bottom: 1px solid var(--primary);
+  background-color: rgba(51, 51, 51, 0.8);
+  border-bottom: 1px solid rgba(51, 51, 51, 1);
   position: fixed; /*agar navbar tidak berpindah posisi*/
   top: 0;
   left: 0;
@@ -39,7 +40,7 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: bold;
-  color: black;
+  color: rgba(255, 255, 240, 1);
 }
 
 .navbar .navbar-logo span {
@@ -47,7 +48,7 @@ body {
 } 
 
 .navbar .navbar-nav a {
-  color: black;
+  color: rgba(255, 255, 240, 1);
   display: inline-block;
   font-size: 1rem;
   margin: 0.5rem;
@@ -75,7 +76,7 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: black;
+  color: rgba(255, 255, 240, 1);
   margin: 0 0.5rem;
 }
 
@@ -107,7 +108,7 @@ body {
   width: 100%;
   height: 30%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(255, 192, 203, 1)7%, rgba(55, 192, 203, 0) 70%);
+  background: linear-gradient(0deg, rgba(255, 215, 0, 1)7%, rgba(225, 215, 0, 0) 70%);
 }
 
 .hero .content {
@@ -132,8 +133,9 @@ body {
   font-size: 1.6rem;
   margin: 0;
   line-height: 1.56;
-  font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(255, 99, 71, 0.5);
+  font-weight: 300;
+  color: rgba(255, 255, 240, 1);
+  text-shadow: 1px 1px 2px var(--sub);
   mix-blend-mode: difference;
 }
 
@@ -170,6 +172,7 @@ body {
       }
 
       .navbar .navbar-nav a{
+        color: var(--sub);
         display: block;
         font-size: 1.6rem;
         margin-left: 1.4rem;
@@ -209,6 +212,7 @@ body {
       }
 
       .navbar .navbar-nav a{
+        color: var(--sub);
         display: block;
         font-size: 1.4rem;
         margin-left: 1.4rem;

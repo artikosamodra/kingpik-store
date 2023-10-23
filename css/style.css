@@ -18,16 +18,15 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: black;
-  min-height: 2000px;
-
 }
+
 
 /*NAVBAR*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 7%; /* 1 rem = 16px*/
+  padding: 0.2rem 7%; /* 1 rem = 16px*/
   background-color: rgba(51, 51, 51, 0.8);
   border-bottom: 1px solid rgba(51, 51, 51, 1);
   position: fixed; /*agar navbar tidak berpindah posisi*/
@@ -89,7 +88,7 @@ body {
   display: none;
 }
 
-/*Hero Section*/
+/*HERO SECTION*/
 .hero{
   min-height: 100vh;
   display: flex;
@@ -135,8 +134,8 @@ body {
   line-height: 1.56;
   font-weight: 300;
   color: rgba(255, 255, 240, 1);
-  text-shadow: 1px 1px 2px var(--sub);
-  mix-blend-mode: difference;
+  text-shadow: 1px 1px 1px black);
+  mix-blend-mode:difference;
 }
 
 .hero .content .cta{
@@ -150,8 +149,153 @@ body {
   box-shadow: 1px 1px 3px rgba(255, 99, 71, 0.5) ;
 }
 
+/*ABOUT SECTION*/
+.about, .produk, .kontak{
+  padding: 8rem 7% 1.2rem;
+}
+ 
+.about h2, .produk h2,.kontak h2{
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
 
-/*Media Queries*/
+.about .row{
+  display: flex;
+}
+
+.about .row .about-img{
+  flex: 1 1 45rem; /*flex grow(pertumbuhan), flex shrink(penyusutan), flex basis(ukuran)*/
+}
+
+.about .row .about-img img{
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.about .row .content-about{
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content-about h3{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content-about p{
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+/*PRODUK SECTION*/
+.produk .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.produk .row .menu-card{
+  background-color: rgb(240 230 140);
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0.2rem;
+  box-shadow: 0 3px 3px rgba(5, 5, 5, 0.2);
+  border-radius: 10px;
+}
+
+.produk .row .menu-card img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.produk .row .menu-card .name{
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.produk .row .menu-card .name span{
+  font-weight: 400;
+}
+
+.produk .row .menu-card .price{
+  margin: 2rem 0 1rem 0;
+}
+
+.produk .row .menu-card .price a{
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  padding: 1rem 6rem; 
+  background-color: var(--primary);
+}
+
+.produk .row .menu-card .price a:hover {
+  background-color: rgb(150, 225, 75) ;
+}
+
+/*KONTAK SECTION*/
+
+.kontak{
+  margin-bottom: 4rem;
+}
+
+.kontak .row{
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgb(240 230 140);
+  box-shadow: 0 3px 3px rgba(5, 5, 5, 0.2);
+}
+
+.kontak .row .map{
+  flex:  1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  margin: 1rem;
+  box-shadow: 0 3px 3px rgba(5, 5, 5, 0.2);
+  height: 25rem;
+}
+
+.kontak .row form{
+  flex: 1 1 45rem;
+  padding: 5rem 2 rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.kontak .row form .input-group{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  border: 1px solid rgba(100, 100, 100, 0.5);
+  padding-left: 2rem;
+  background-color: rgba(255, 255, 240, 1);
+  border-radius: 10px;
+}
+
+.kontak .row form .input-group input{
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1rem;
+  background: none;
+}
+
+.kontak .row form .btn{
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/*MEDIA QUERY*/
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
     html {
@@ -189,6 +333,23 @@ body {
       
       .navbar .navbar-nav.active{
         right: 0;
+      }
+
+      .about .row{
+        flex-wrap: wrap;
+      }
+
+      .about .row .about-img img{
+        height: 40rem;
+        object-fit: cover; /*agar ketika di tarik objek tetap simetris*/
+      }
+
+      .kontak .row{
+        flex-wrap: wrap;
+      }
+
+      .kontak .row .map{
+        height: 45rem;
       }
 }
 
@@ -229,5 +390,22 @@ body {
       
       .navbar .navbar-nav.active{
         right: 0;
+      }
+
+      .about .row{
+        flex-wrap: wrap;
+      }
+
+      .about .row .about-img img{
+        height: 24rem;
+        object-fit: cover; /*agar ketika di tarik objek tetap simetris*/
+      }
+
+      .kontak .row{
+        flex-wrap: wrap;
+      }
+
+      .kontak .row .map{
+        height: 45rem;
       }
 }

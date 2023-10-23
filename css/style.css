@@ -295,6 +295,56 @@ body {
   cursor: pointer;
 }
 
+/*FOOTER*/
+footer{
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1.4rem;
+  margin-top: 1rem;
+}
+
+footer .socials{
+  color: white;
+  padding: 0 2rem;
+}
+
+footer .socials a{
+  color: white;
+  margin: 0 0.7rem;
+}
+
+footer .socials a:hover{
+  color: rgb(240 230 140);
+}
+
+footer .links{
+  color: white;
+  padding: 1rem;
+}
+
+footer .links a{
+  color: white;
+  font-weight: 400;
+  padding: 0 0.5rem;
+}
+
+footer .links a:hover{
+  color: rgb(240 230 140);
+}
+
+footer .credit{
+  color: white;
+}
+
+footer .credit a{
+  color: white;
+  font-weight: 700;
+}
+
+footer .credit a:hover{
+  color: rgb(240 230 140);
+}
+
 /*MEDIA QUERY*/
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -134,7 +134,7 @@ body {
   line-height: 1.56;
   font-weight: 300;
   color: rgba(255, 255, 240, 1);
-  text-shadow: 1px 1px 1px black);
+  text-shadow: 1px 1px 1px black;
   mix-blend-mode:difference;
 }
 

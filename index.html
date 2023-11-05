@@ -27,15 +27,60 @@
       <div class="navbar-nav">
         <a href="#">Beranda</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#produk">Produk</a>
+        <a href="#produk">Info Produk</a>
+        <a href="#store">Beli Produk</a>
         <a href="#kontak">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
         <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="ham-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!--Searching Start-->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari produk..." />
+        <label for="search-box"><a href="#produk" id="search-button"><i data-feather="search"></i></a></i></label>
+      </div>
+      <!--Searching End-->
+
+      <!--Shopping Cart Navbar Start-->
+      <div class="shop-cart">
+        <div class="cart-item">
+          <img src="img/produk/kripik-original.jpg" alt="original" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">Rp 20.000,-</div>
+          </div>
+          <i data-feather="trash" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/produk/kripik-hot.jpg" alt="original" />
+          <div class="item-detail">
+            <h3>Product 2</h3>
+            <div class="item-price">Rp 20.000,-</div>
+          </div>
+          <i data-feather="trash" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/produk/kripik-balado.jpg" alt="original" />
+          <div class="item-detail">
+            <h3>Product 3</h3>
+            <div class="item-price">Rp 20.000,-</div>
+          </div>
+          <i data-feather="trash" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/produk/kripik-seaweed.jpg" alt="original" />
+          <div class="item-detail">
+            <h3>Product 4</h3>
+            <div class="item-price">Rp 20.000,-</div>
+          </div>
+          <i data-feather="trash" class="remove-item"></i>
+        </div>
+      </div>
+      <!--Shopping Cart Navbar End-->
     </nav>
     <!--Navbar End-->
 
@@ -43,7 +88,10 @@
     <section class="hero" id="home">
       <main class="content">
         <h1><span>Kingpik,</span> Rajanya Kripik</h1>
-        <p>Kentang pilihan dipanen langsung dari Kebun Blitar Raya, Diberi Bumbu Rahasia yang Nikmat. Rasakan Kripik Kelezatan yang Sejati!</p>
+        <p>
+          Kentang pilihan dipanen langsung dari kebun lokal Blitar Raya. Diberi bumbu
+          rahasia yang nikmat. Rasakan kripik kentang kelezatan sejati!
+        </p>
         <a href="#produk" class="cta">Order Sekarang</a>
       </main>
     </section>
@@ -57,12 +105,23 @@
 
       <div class="row">
         <div class="about-img">
-          <img src="img/about-img.jpg" alt="Tentang Kami"/>
+          <img src="img/about-img.jpg" alt="Tentang Kami" />
         </div>
         <div class="content-about">
           <h3>Ingin tahu apa enaknya?</h3>
-          <p>Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, veritatis.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur recusandae accusantium. Nobis, aliquam? Doloremque nemo voluptatum quis nihil laboriosam.</p>
+          <p>
+            <span>Kami adalah produsen kripik kentang memberikan kualitas terbaik kepada pelanggan kami.</span>
+            Dari awal, kami selalu memprioritaskan bahan baku berkualitas. Kentang segar kami dipilih secara cermat dari petani lokal di Kota Blitar, sehingga kualitas rasa dan tekstur kripik kami selalu terjaga. Kami menghadirkan beragam varian rasa dengan dominasi rasa pedas, gurih, asin dan manis. Kami percaya bahwa kualitas adalah kunci untuk menciptakan pengalaman camilan yang istimewa.
+          </p>
+          <p>
+            Selain fokus pada rasa, kami juga memperhatikan aspek kesehatan.
+            <span>Kami telah mengurangi kandungan garam dan lemak dalam produk kami tanpa mengorbankan cita rasa.</span>
+            Kami juga menawarkan varian kripik kentang yang bebas gluten, sehingga semua pelanggan dapat menikmatinya. Keberlanjutan juga menjadi prinsip inti kami, dan kami berusaha untuk mengurangi dampak lingkungan dengan kemasan yang ramah lingkungan.
+          </p>
+          <p>
+            Umpan balik pelanggan sangat berharga bagi kami, dan kami selalu mendengarkan untuk terus memperbaiki produk kami.
+            <span>Terima kasih telah memilih kami sebagai pilihan camilan Anda.</span>
+          </p>
         </div>
       </div>
     </section>
@@ -71,67 +130,354 @@
     <!--Menu Section Start-->
     <section id="produk" class="produk">
       <h2>Produk Kami</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eum animi debitis dignissimos, ullam molestias libero sed officiis adipisci veniam.</p>
-
+      <p>
+        Kingpik kripik kentang nikmat kami memiliki 6 varian rasa. Tiap varian rasa membuat anda akan merasa sedang berkeliling dunia. Dapatkan informasi detail pada setiap varian rasa <span>KINGPIK, Rajanya Kripik.</span>
+      </p>
       <div class="row">
         <div class="menu-card">
-          <img src="img/produk/kripik-original.jpg" alt="kripik original">
-          <h3 class="name">Rasa Original <span>(150gr)</span></h3>
-          <p class="price"><a href="#produk">IDR 20.000,00</a></p>
+          <img src="img/produk/kripik-original.jpg" alt="kripik original" />
+          <h3 class="name">Original</h3>
+          <p class="detail"><a href="#produk">Info Produk</a></p>
         </div>
 
         <div class="menu-card">
-          <img src="img/produk/kripik-balado.jpg" alt="kripik balado">
-          <h3 class="name">Rasa Balado <span>(150gr)</span></h3>
-          <p class="price"><a href="#produk">IDR 20.000,00</a></p>
+          <img src="img/produk/kripik-balado.jpg" alt="kripik balado" />
+          <h3 class="name">Balado</h3>
+          <p class="detail"><a href="#produk">Info Produk</a></p>
         </div>
 
         <div class="menu-card">
-          <img src="img/produk/kripik-seaweed.jpg" alt="kripik seaweed">
-          <h3 class="name">Rasa Korean Seaweed <span>(150gr)</span></h3>
-          <p class="price"><a href="#produk">IDR 20.000,00</a></p>
+          <img src="img/produk/kripik-seaweed.jpg" alt="kripik seaweed" />
+          <h3 class="name">Korean Seaweed</h3>
+          <p class="detail"><a href="#produk">Info Produk</a></p>
         </div>
 
         <div class="menu-card">
-          <img src="img/produk/kripik-choco.jpg" alt="kripik choco">
-          <h3 class="name">Rasa Choco Sweet <span>(150gr)</span> </h3>
-          <p class="price"><a href="#produk">IDR 20.000,00</a></p>
+          <img src="img/produk/kripik-choco.jpg" alt="kripik choco" />
+          <h3 class="name">Choco Sweet</h3>
+          <p class="detail"><a href="#produk">Info Produk</a></p>
         </div>
 
         <div class="menu-card">
-          <img src="img/produk/kripik-hotcarolina.jpg" alt="kripik hotcarolina">
-          <h3 class="name">Rasa Special Hot Carolina <span>(150gr)</span></h3>
-          <p class="price"><a href="#produk">IDR 20.000,00</a></p>
+          <img src="img/produk/kripik-hotcarolina.jpg" alt="kripik hotcarolina" />
+          <h3 class="name">Special Hot Carolina</h3>
+          <p class="detail"><a href="#produk">Info Produk</a></p>
         </div>
 
         <div class="menu-card">
-          <img src="img/produk/kripik-hot.jpg" alt="kripik hot">
-          <h3 class="name">Rasa Javanese Hot <span>(150gr)</span></h3>
-          <p class="price"><a href="#produk">IDR 20.000,00</a></p>
+          <img src="img/produk/kripik-hot.jpg" alt="kripik hot" />
+          <h3 class="name">Javanese Hot</h3>
+          <p class="detail"><a href="#produk">Info Produk</a></p>
         </div>
       </div>
     </section>
     <!--Menu Section End-->
 
+    <!--Store Start-->
+    <section id="store" class="store">
+      <h2>Beli Produk</h2>
+      <p>Ini merupakan layanan pembelian online produk <span>KINGPIK</span>. Pelanggan dapat mendapatkan informasi detail produk dan memasukkan item yang dipilih pada keranjang pembelian. <span>HAPPY SHOPPING!</span></p>
+      <div class="store-view">
+        <div class="row" id="gram150">
+          <div class="store-card">
+            <h3>Rasa Original <span></span></h3>
+            <h4>(150gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-original.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 20K <span>IDR 35K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail1" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Balado <span></span></h3>
+            <h4>(150gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-balado.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class=""></i>
+              </div>
+            <div class="store-price">
+              IDR 20K <span>IDR 35K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail2" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Seaweed <span></span></h3>
+            <h4>(150gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-seaweed.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 22K <span>IDR 35K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail3" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Choco Sweet <span></span></h3>
+            <h4>(150gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-choco.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class=""></i>
+              </div>
+            <div class="store-price">
+              IDR 20K <span>IDR 35K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail4" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Hot Carolina <span></span></h3>
+            <h4>(150gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-hotcarolina.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 22K <span>IDR 35K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail5" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Javanese Hot <span></span></h3>
+            <h4>(150gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-hot.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 20K <span>IDR 35K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail6" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="row" id="gram250">
+          <div class="store-card">
+            <h3>Rasa Original <span></span></h3>
+            <h4>(250gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-original.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 28K <span>IDR 40K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail7" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Balado <span></span></h3>
+            <h4>(250gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-balado.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class=""></i>
+              </div>
+            <div class="store-price">
+              IDR 28K <span>IDR 40K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail8" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Seaweed <span></span></h3>
+            <h4>(250gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-seaweed.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 28K <span>IDR 40K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail9" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Choco Sweet <span></span></h3>
+            <h4>(250gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-choco.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class=""></i>
+              </div>
+            <div class="store-price">
+              IDR 28K <span>IDR 40K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail10" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Hot Carolina <span></span></h3>
+            <h4>(250gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-hotcarolina.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+              </div>
+            <div class="store-price">
+              IDR 28K <span>IDR 40K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail11" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+          <div class="store-card">
+            <h3>Rasa Javanese Hot <span></span></h3>
+            <h4>(250gr)</h4>
+            <div class="store-img">
+              <img src="img/produk/kripik-hot.jpg" alt="kripik hot" />
+            </div> 
+              <div class="star">
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class="starfill"></i>
+                <i data-feather="star" class=""></i>
+              </div>
+            <div class="store-price">
+              IDR 25K <span>IDR 40K</span>
+            </div>
+            <div class="store-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" id="store-detail12" class="store-detail"><i data-feather="eye"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!--Store End-->
+
     <!--Kontak Section Start-->
     <section id="kontak" class="kontak">
       <h2>Kontak</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id mollitia maxime debitis nesciunt? Illo quibusdam ducimus ipsum unde sequi perspiciatis?</p>
+      <p>
+        Kami membuka peluang bagi yang ingin bermitra dengan kami sebagai distributor maupun reseller. Kontak kami untuk informasi lebih lanjut.
+      </p>
       <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.692240171613!2d112.1873322!3d-8.1600605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78eb52575dc8bf%3A0x7af9f195a5b8dc04!2sPuncak%20Betet!5e0!3m2!1sen!2sid!4v1697960432626!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-        
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.692240171613!2d112.1873322!3d-8.1600605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78eb52575dc8bf%3A0x7af9f195a5b8dc04!2sPuncak%20Betet!5e0!3m2!1sen!2sid!4v1697960432626!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
         <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Nama">
+            <input type="text" placeholder="Nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="Nomor HP">
+            <input type="text" placeholder="Nomor HP" />
           </div>
           <button type="submit" class="btn">Kirim Pesan</button>
         </form>
@@ -148,10 +494,8 @@
       </div>
 
       <div class="links">
-        <a href="#home">Home</a> | 
-        <a href="#about">Tentang Kami</a> |
-        <a href="#produk">Produk</a> |
-        <a href="#kontak">Contact</a> |
+        <a href="#home">Home</a> | <a href="#about">Tentang Kami</a> |
+        <a href="#produk">Produk</a> | <a href="#kontak">Contact</a> |
       </div>
 
       <div class="credit">
@@ -160,6 +504,30 @@
     </footer>
     <!--Footer End-->
 
+    <!--Modal Box Start-->
+    <div class="box-modal" id="box-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-area">
+          <img src="img/produk/kripik-hot.jpg" alt="Javanese Hot" />
+          <div class="modal-produk">
+            <h3>Produk 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ab facilis minima aperiam, aliquam cumque voluptate obcaecati ad rem eum necessitatibus deleniti itaque. Quae culpa aut molestiae ab quidem temporibus deleniti deserunt, aliquid voluptate facilis labore, tempora ad unde sit.</p>
+            <div class="star">
+              <i data-feather="star" class="starfill"></i>
+              <i data-feather="star" class="starfill"></i>
+              <i data-feather="star" class="starfill"></i>
+              <i data-feather="star" class="starfill"></i>
+              <i data-feather="star" class=""></i>
+            </div>
+            <div class="modal-price">IDR 20K <span> IDR 35K </span></div>
+            <a href="#"><i data-feather="shopping-cart" class="modal-cart"></i><span>Add to Cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Box End-->
+    
 
     <!--============ Script Area ============-->
 

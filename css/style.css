@@ -482,15 +482,18 @@ body {
 
 .modal-container{ /*untuk area konten modal box*/
   background-color: var(--text);
-  padding: 2rem;
+  padding-top: 1rem;
   border: 1px solid var(--sub);
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-modal .modal-area{
   display: flex;
   padding: 2rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .box-modal .close-icon{
@@ -500,10 +503,9 @@ body {
 }
 
 .box-modal .modal-area img{
-  width: 50%;
-  height: 50%;
-  padding: 2rem;
   border-radius: 40px;
+  width: 30%;
+  height: 30%;
 }
 
 .box-modal .modal-area .modal-produk{
@@ -516,12 +518,8 @@ body {
 }
 
 .box-modal .modal-area p{
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   line-height: 1.8rem;
-}
-
-.box-modal .modal-area .star{
-  margin: 1rem 0;
 }
 
 .box-modal .modal-area .star .starfill{
@@ -530,7 +528,8 @@ body {
 }
 
 .box-modal .modal-area .modal-price{
-  margin: 2rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -545,7 +544,7 @@ body {
   background-color: var(--primary);
   color: var(--text);
   font-weight: bold;
-  padding: 1.4rem;
+  padding: 1rem;
   border-radius: 5px;
   text-align: center;
 }
@@ -565,74 +564,6 @@ body {
   top: 0.4rem;
   position: relative;
 }
-
-
-
-/*
-.box-modal{
-  background-color: rgba(64, 224, 208,0.7);
-  padding: 5%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  overflow: auto;
-}
-
-.modal-container{
-  background-color: var(--text);
-  position: relative;
-  color: var(--sub);
-  margin: 10% auto;
-  padding: 2rem;
-  border: 1px solid var(--sub);
-  width: 80%;
-}
-
-.box-modal .modal-area{
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.modal-container .close-icon{
-  position: absolute;
-  right: 1rem;
-  color: var(--sub);
-}
-
-.box-modal .modal-area img{
- width: 50%;
- height: 50%;
-}
-
-.store-content h3{
-  padding-bottom: 1rem;
-}
-
-.store-content p{
-  padding: 1rem 0;
-}
-
-.box-modal .store-content a{
-  background-color: var(--primary);
-  padding: 1rem;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  color: var(--text);
-  font-weight: 700;
-}
-
-.box-modal .store-content a span{
-  padding-bottom: 12rem;
-}
-*/
-
-
 
 /*KONTAK SECTION*/
 
@@ -846,6 +777,11 @@ footer .credit a:hover {
   .store .store-img img{
     height: 15rem;
   }
+
+  /*Modal Box Tablet*/
+  .box-modal{ /*untuk bg cover full*/  
+    padding: 15% 5rem;
+  }
 }
 
 
@@ -963,5 +899,20 @@ footer .credit a:hover {
     color: white;
     margin: 0 1rem;
     padding: 0.8rem;
+  }
+
+  /*Modal Box Tablet*/
+  .box-modal{ /*untuk bg cover full*/  
+    padding: 20% 10rem;
+  }
+
+  .box-modal .modal-area{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-modal .modal-area img{
+    width: 30%;
   }
 }

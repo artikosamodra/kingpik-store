@@ -350,6 +350,95 @@ body {
   transition: 0.5s;
 }
 
+/*MODAL BOX PRODUK*/
+.modalbox-produk{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  align-items: center;
+  padding: 0 10%;
+  display: none;
+  overflow: auto;
+  position: fixed;
+  background-color: rgba(64, 224, 208,0.7);
+}
+
+.modalbox-produk.active{
+  display: flex;
+} 
+
+ /*untuk area konten modal box*/
+.modalbox-produk .modal-container{
+  background-color: var(--text);
+  padding: 2rem;
+  border: 1px solid var(--sub);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalbox-produk .close-icon-produk{
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: var(--sub);
+}
+
+.modalbox-produk .detail-produk{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 100%;
+}
+
+.modalbox-produk .detail-produk .produk-kiri{
+  max-width: 50%;
+}
+
+.modalbox-produk .detail-produk .produk-kiri img{
+  width: 100%;
+  padding: 1rem;
+}
+
+.modalbox-produk .detail-produk .produk-kanan{
+  max-width: 50%;
+  padding: 1rem;
+}
+
+.modalbox-produk .detail-produk h3{
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalbox-produk .border-gizi{
+  border: 1px solid black;
+  max-width: 80%;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.modalbox-produk .detail-produk p{
+  line-height: 2rem;
+  padding: 1rem 0;
+  align-items: baseline
+}
+
+.modalbox-produk .modal-deskripsi{
+  border-top: 1px dashed black;
+}
+
+.modalbox-produk .modal-deskripsi h4{
+  padding: 1rem 0;
+}
+
+.modalbox-produk .modal-deskripsi p{
+  line-height: 2rem;
+}
+
 /*STORE SECTION*/ /*Bisa menggunakan flex, namun ini dengan grid*/
 .store{
   background-color: var(--text);
@@ -480,7 +569,8 @@ body {
   display: flex;
 }
 
-.modal-container{ /*untuk area konten modal box*/
+/*untuk area konten modal box*/
+.box-modal .modal-container{ 
   background-color: var(--text);
   padding-top: 1rem;
   border: 1px solid var(--sub);
@@ -496,7 +586,7 @@ body {
   align-items: center;
 }
 
-.box-modal .close-icon{
+.box-modal .close-icon-store{
   position: absolute;
   right: 1rem;
   color: var(--sub);
@@ -782,6 +872,17 @@ footer .credit a:hover {
   .box-modal{ /*untuk bg cover full*/  
     padding: 15% 5rem;
   }
+
+  .modalbox-produk{
+    padding: 3%
+  }
+
+  .modalbox-produk .border-gizi{
+    border: 1px solid black;
+    max-width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
 }
 
 
@@ -901,7 +1002,7 @@ footer .credit a:hover {
     padding: 0.8rem;
   }
 
-  /*Modal Box Tablet*/
+  /*Modal Box Smartphone*/
   .box-modal{ /*untuk bg cover full*/  
     padding: 20% 10rem;
   }
@@ -914,5 +1015,39 @@ footer .credit a:hover {
 
   .box-modal .modal-area img{
     width: 30%;
+  }
+  /*MODAL BOX PRODUK*/
+
+  .modalbox-produk{
+  }
+  
+  /*untuk area konten modal box*/
+  .modalbox-produk .modal-container{
+    padding: 3%;
+  }
+  
+  .modalbox-produk .detail-produk{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .modalbox-produk .detail-produk .produk-kiri{
+    max-width: 100%;
+  }
+  
+  .modalbox-produk .detail-produk .produk-kiri img{
+    width: 50%;
+    border-radius: 15px;
+  }
+  
+  .modalbox-produk .detail-produk .produk-kanan{
+    text-align: left;
+    max-width: 100%;
+  }
+  
+  .modalbox-produk .border-gizi{
+    max-width: 100%;
   }
 }

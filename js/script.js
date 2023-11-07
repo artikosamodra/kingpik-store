@@ -26,32 +26,42 @@ document.querySelector('#shopping-cart').onclick = (e) =>{
   e.preventDefault();
 }
 
-//ModalBox Class
+//ModalBox Class Produk
+const modalBoxProduk = document.querySelector('#modalbox-produk');
+const produkDetailButtons = document.querySelectorAll('.detail');
+
+produkDetailButtons.forEach((btn) =>{
+  btn.onclick = (e) => {
+    modalBoxProduk.classList.toggle('active');
+    e.preventDefault();
+  }
+});
+
+
+//ModalBox Class Store
 //menggunakan class selector, bukan ID. untuk memilih semua action yang sama
-const modalBox = document.querySelector('#box-modal');
+const modalBoxStore = document.querySelector('#box-modal');
 const storedDetailButtons = document.querySelectorAll('.store-detail');
 
 //menggunakan looping. forEach = jika kita forEach, maka setiap btn didalamnya, maka onclick
 storedDetailButtons.forEach((btn) => {
   //seperti onclick biasa namun didalam looping
   btn.onclick = (e) => {
-    modalBox.classList.toggle('active');
+    modalBoxStore.classList.toggle('active');
     e.preventDefault();
   }
-})
+});
 
-window.onclick = (e) => {
-  if (e.target === modalBox){
-    modalBox.classList.remove('active');
-    e.preventDefault();
-  }
+//Close Button => kita buat manual untuk dokumentasi saja (dengan nama class close icon yang berbeda)
+const closeButtonProduk = document.querySelector('.close-icon-produk');
+closeButtonProduk.onclick = (e) => {
+  modalBoxProduk.classList.remove('active');
+  e.preventDefault();
 }
 
-//Close Button
-const closeButton = document.querySelector('.close-icon');
-
-closeButton.onclick = (e) => {
-  modalBox.classList.remove('active');
+const closeButtonStore = document.querySelector('.close-icon-store');
+closeButtonStore.onclick = (e) => {
+  modalBoxStore.classList.remove('active');
   e.preventDefault();
 }
 
@@ -60,6 +70,7 @@ const hamMenu = document.querySelector('#ham-menu');
 const searchButton = document.querySelector('#search-button');
 const cartButton = document.querySelector('#shopping-cart');
 
+//addEventListener
 document.addEventListener('click', function (e) {
   //addEventLister = dimanapun di page >> (e)=event
   if (!hamMenu.contains(e.target) && !navbarNav.contains(e.target)) {
@@ -75,3 +86,15 @@ document.addEventListener('click', function (e) {
     cartNav.classList.remove('active');
   }
 });
+//Dokumentasi lain dari addEventListener
+window.onclick = (e) => {
+  if (e.target === modalBoxStore){
+    modalBoxStore.classList.remove('active');
+    e.preventDefault();
+  }
+  
+  if (e.target === modalBoxProduk){
+    modalBoxProduk.classList.remove('active');
+    e.preventDefault();
+  }
+}

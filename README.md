@@ -51,6 +51,9 @@ Teknologi yang digunakan fundamental HTML, CSS, JS tanpa framework sebagai bentu
 - CSS
 - JavaScript
 
+##Thanks~
+##Me = Art-Tao
+
 
 
 

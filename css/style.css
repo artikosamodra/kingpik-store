@@ -665,6 +665,11 @@ body {
     rgba(255, 215, 0, 1)
   );
 }
+
+.kontak p span{
+  font-weight: bold;
+}
+
 .kontak .row {
   display: flex;
   margin-top: 2rem;

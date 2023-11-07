@@ -40,7 +40,7 @@ Ini merupakan front-end dari website toko online Kingpik, berisi konten informas
 - Deatil Butoon = Melihat Informasi dari varian produk, rating, harga dan button "Add to Cart" dalam bentuk modal box.
 
 ##### Kontak
--Berisi Map Menu Lokasi Perusahaan.
+- Berisi Map Menu Lokasi Perusahaan.
 - Menu Hubungi Kami = Input Nama, Email dan Kontak.
 
 ### Teknologi
